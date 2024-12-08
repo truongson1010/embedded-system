@@ -71,7 +71,7 @@ void loop() {
     digitalWrite(bulb,LOW);
     noTone(12);
     delay(1000);
-   }  if((temperature < temp1 && temperature > temp3) || State2) {
+   }  else if((temperature < temp1 && temperature > temp3) || State2) {
     servo.write(0);
     digitalWrite(led3,LOW); 
     digitalWrite(led2,HIGH);
